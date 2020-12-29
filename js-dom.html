@@ -29,7 +29,12 @@
         // change the font size of the first <p> to 40px
         document.getElementById("p1").style.fontSize = "40px";
         // add button
+        let button = document.createElement("button");
+        document.getElementsByTagName("body")[0].appendChild(button);
         // hide image when button is clicked
+        button.addEventListener("click", () => {
+            img.style.display = "none";
+        })
     </script>
 </body>
 </html>
