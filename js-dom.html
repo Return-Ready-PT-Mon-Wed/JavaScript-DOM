@@ -4,15 +4,20 @@
         <title>DOM Lab</title>
     </head>
 <body>
-<p id="part_1">
-
-</p>
-<p id="part_2">
-
-</p>
+<p id="part_1"> Developers for life</p>
+<p id="part_2"></p>
 
 
 
+//<img id="myImg" src="img1.jpg" alt="Coding image" width="300" height="225">
+
+<p id="dummy"></p>
+<script>
+function myFunction() {
+  var image = document.getElementById("myImg").src;
+  document.getElementById("dummy").innerHTML = image;
+}
+</script>
 
 </body>
 
