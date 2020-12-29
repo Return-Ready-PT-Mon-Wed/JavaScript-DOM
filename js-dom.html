@@ -2,23 +2,31 @@
 <html>
     <head>
         <title>DOM Lab</title>
+        <link rel="stylesheet" href="dom.css">
     </head>
 <body>
 <p id="part_1" style="color:blue; font-size:40px"> Developers for life</p>
 <p id="part_2"></p>
 
+<img id="image" src="img1.jpg" alt="Coding image" width="300" height="225">
+<div>
+    <button onclick="show_hide()">Click to show and hide image</button>
+</div>
 
 
-<img id="myImg" src="img1.jpg" alt="Coding image" width="300" height="225">
 
- <p id="dummy"></p>
+<p id="dummy"></p>
 <script>
 function myFunction() {
-  var image = document.getElementById("myImg").src;
-  document.getElementById("dummy").innerHTML = image;
+    let x = document.images[0].src;
+    document.getElementById("dummy").innerHTML=x;
+  // var image = document.getElementById("myImg").src;
+ // document.getElementById("dummy").innerHTML = image;
 }
-</script>
+//<button type="button">Click Me if you want to hide the image!</button>
 
+</script>
+<script src="dom.js"></script>
 </body>
 
 </html>
