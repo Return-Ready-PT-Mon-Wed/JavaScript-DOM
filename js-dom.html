@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Coders" style="color:blue; font-size: 40px;">Developers for life!</p>
+    <p id="Developers" style="color: red">We are coders!</p>
+    
+    <img id="myImg" src="https://www.new-startups.com/wp-content/uploads/unsplash-images-free.jpg" alt="The Pulpit Rock" width="304" height="228">
+    
+    <p id="demo"></p>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myImg").src;
+          document.getElementById("demo").innerHTML = x;
+        }
+        </script>
+
+    
+
+    <button onclick="myFunction()">Click Me!</button>
+
+<div id="myImg"></div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
+
