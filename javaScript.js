@@ -13,13 +13,20 @@ document.getElementById("para1").innerHTML = "We are coders";
 document.getElementById("para2").innerHTML = "We are coders";
 document.getElementById("para1").innerHTML = "Developers for life!";
 
-html = document.getElementById("para1").innerHTML = "Developers for life!";
+
 
 var img = document.createElement('img');
 img.src = "lib/images/Kimberly Bryant.jpg";
 var src = document.querySelector("body");
  src.appendChild(img);
+
+
+ document.getElementById("para1").style.color = "blue";
+ document.getElementById("para1").style.fontSize = "40px";
+
 console.log(html);
+
+
 
  
  
