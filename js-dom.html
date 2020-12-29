@@ -8,5 +8,19 @@
 <body>
     <p id="p1"></p>
     <p id="p2"></p>
+    <script>
+        // write script to add "We are coders!" to <p>
+        let newp = document.createTextNode("We are coders!");
+        let pContent = document.getElementsByTagName("p");
+        for (let i=0; i<pContent.length; i++) {
+            pContent[i].textContent += "We are coders!"
+        }
+        // Find the first <p> element and change its text to "Developers for life!"
+        document.getElementById("p1").textContent = "Developers for life!";
+        // Add an image to the HTML document using DOM methods
+        let img = document.createElement("img");
+        img.src = "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg";
+        document.getElementsByTagName("body")[0].appendChild(img);
+    </script>
 </body>
 </html>
