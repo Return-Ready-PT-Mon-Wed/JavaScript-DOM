@@ -11,19 +11,17 @@ for (let i = 0; i < bothPara.length; i++) {
 
 var paraOne = document.getElementById("paraOne");
 paraOne.innerText = paraOneMessage;
+paraOne.style.fontSize = "40px";
 
-
+//
 let imageHtml = 
-`<div class="tech">
-<div class="techie">
-  <h3>This is a laptop!</h3>
-  <img
-    class="image"
-    src="lib/images/laptop.svg"
-    alt="Granville Woods"
-  />
-</div> */
+`
+<h3>This is a laptop!</h3>
+<img class="image" src="lib/images/laptop.svg" alt="Granville Woods"/>
 `;
 
 let bodyElem = document.querySelector('body');
 bodyElem.innerHTML += imageHtml;
+
+// Change all text to red
+bodyElem.style.color = "red";
