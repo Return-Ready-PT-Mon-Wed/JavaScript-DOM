@@ -24,7 +24,21 @@ var src = document.querySelector("body");
  document.getElementById("para1").style.color = "blue";
  document.getElementById("para1").style.fontSize = "40px";
 
-console.log(html);
+ var button = document.createElement('button');
+button.innerHTML = 'click me';
+src.appendChild(button);
+
+ button.addEventListener('click', () => {
+    if(img.style.display == 'none'){
+                img.style.display = 'block';
+              
+       }else {
+                         
+            img.style.display = 'none';
+          }
+     }); 
+
+
 
 
 
