@@ -2,6 +2,15 @@
 <html>
     <head>
         <title>DOM lab</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('#btn1').on("click",function(e){
+               $('#myImg').toggle('slow');
+              });
+            });
+            </script>
     </head>
 <body>
 
@@ -12,6 +21,8 @@
 
     <img id="myImg" src="http://placeimg.com/200/200/arch" alt="architecture">
     <p id="demo"></p>
+
+    <button type="button" id="btn1">Show/Hide Image</button>
 
     <script>
         function myFunction() {
