@@ -6,20 +6,21 @@
 <body>
 
     
-    <p id="para1">Developers for life!</p>
+    <p id="para1" style="color: red; font-size: 40px;">Developers for life!</p>
 
     <p id="Para2"></p>
 
-    <img src="http://placeimg.com/200/200/arch" alt="arch" >
+    <img id="myImg" src="http://placeimg.com/200/200/arch" alt="architecture">
     <p id="demo"></p>
-
 
     <script>
         function myFunction() {
-        var x = document.images[0].src;
-        document.getElementById("demo").innerHTML = x;
-}
-    </script>
+          var x = document.getElementById("myImg").src;
+          document.getElementById("demo").innerHTML = x;
+          document.getElementById("para1").style.fontSize = "40px";
+          
+        }
+        </script>
 </body>
 
 </html>
