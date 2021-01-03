@@ -17,3 +17,5 @@ function fontSize() {
 
 }
 
+document.getElementById("my_button").style.visibility = "hidden";
+
