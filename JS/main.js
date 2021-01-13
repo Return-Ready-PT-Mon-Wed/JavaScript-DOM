@@ -44,4 +44,5 @@ newRandom.innerHTML = '<li>Random Fact: I have traveled to Japan!</li>';
 //Target parent element of the target child & apply changes to child
 oldRandom.parentNode.replaceChild(newRandom, oldRandom);
 
-
+//Style the <li>'s to a color of my choosing
+document.getElementById("aboutList").style.color = "turquoise";
