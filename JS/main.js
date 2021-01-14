@@ -46,3 +46,8 @@ oldRandom.parentNode.replaceChild(newRandom, oldRandom);
 
 //Style the <li>'s to a color of my choosing
 document.getElementById("aboutList").style.color = "turquoise";
+
+//Create img element to hold new image
+let myImg = new Image(200, 215);
+myImg.src = 'myPhoto.jpg';
+document.body.appendChild(myImg);
