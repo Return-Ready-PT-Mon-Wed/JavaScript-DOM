@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM lab</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('#btn1').on("click",function(e){
+               $('#myImg').toggle('slow');
+              });
+            });
+            </script>
+    </head>
+<body>
+
+    
+    <p id="para1" style="color: red; font-size: 40px;">Developers for life!</p>
+
+    <p id="Para2"></p>
+
+    <img id="myImg" src="http://placeimg.com/200/200/arch" alt="architecture">
+    <p id="demo"></p>
+
+    <button type="button" id="btn1">Show/Hide Image</button>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myImg").src;
+          document.getElementById("demo").innerHTML = x;
+          document.getElementById("para1").style.fontSize = "40px";
+          
+        }
+        </script>
+</body>
+
+</html>
+
