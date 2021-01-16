@@ -40,3 +40,8 @@ var characters = [
     contribution: "What did/do I do?"
   },
 ];
+// Set the innerHTML property: HTMLElementObject.innerHTML = text
+// Change the HTML content, URL, and target of a link:
+//     document.getElementById("myAnchor").innerHTML = "W3Schools";
+//
+
